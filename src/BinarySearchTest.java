@@ -10,7 +10,8 @@ class BinarySearchTest {
     void orderAgnositc() {
         BinarySearch bs=new BinarySearch();
         int [] arrRev={90,88,55,35,22,11};
-        int [] arr={11,22,45,55,60,90};
+        int [] arr={11,22,45,45,45,55,60,90};
+        int [] pos= {2,4};
         char [] arrL={'b','c','f','e'};
         //testing that if BinarySearch Tests For Reverse
         assertThat(bs.orderAgnositc(arrRev,55), is(55));
@@ -21,6 +22,8 @@ class BinarySearchTest {
         //so ceiling of a number means that number that is less then or equal to the target element
         assertThat(bs.floorNumber(arr,49), is(49));
         assertThat(bs.letterNextToTarget(arrL,'a'), is('b'));
+        assertThat(bs.firstPosLastPos(arr,45), is(pos));
+
 
 
     }
