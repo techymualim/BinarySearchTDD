@@ -14,6 +14,7 @@ class BinarySearchTest {
         int [] arrO={11,22,45,45,45,55,60,90,100,120,140,150,180,200};
 
         int [] pos= {2,4};
+        int [] peak={2,4,5,6,4,2,1};
         char [] arrL={'b','c','f','e'};
         //testing that if BinarySearch Tests For Reverse
         assertThat(bs.orderAgnositc(arrRev,55), is(55));
@@ -26,6 +27,8 @@ class BinarySearchTest {
         assertThat(bs.letterNextToTarget(arrL,'a'), is('b'));
         assertThat(bs.firstPosLastPos(arr,45), is(pos));
         assertThat(bs.bsInfiniteArray(arrO,45), is(45));
+        assertThat(bs.bsInfiniteArray(arrO,45), is(45));
+
 
 
 
