@@ -145,12 +145,20 @@ public class BinarySearch {
         int start=0;
         int end=arr.length -1;
 
-        while(start <=end){
-            int mid=start + (end - start) / 2;
+
+       while(start < end){
+           int mid=start + (end - start) / 2;
+
+           // so basically it will see in the predicate below that if mid is greater then next element then the it is in desending order. we are not doing -1 because it could be the answer
             if(arr[mid] > arr[mid+1]){
                 end=mid;
-            }else if(arr[mid] M)
+            }else if(arr[mid] < arr[mid +1]){
+                // in this it means that the mid is in ascending order
+                start=mid+1;
+            }
         }
+       //the loop will break will start and end will be equal which will mean that it has found the peak element
+        return arr[start];
    }
 
 }

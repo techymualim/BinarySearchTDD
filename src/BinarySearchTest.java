@@ -27,7 +27,7 @@ class BinarySearchTest {
         assertThat(bs.letterNextToTarget(arrL,'a'), is('b'));
         assertThat(bs.firstPosLastPos(arr,45), is(pos));
         assertThat(bs.bsInfiniteArray(arrO,45), is(45));
-        assertThat(bs.bsInfiniteArray(arrO,45), is(45));
+        assertThat(bs.peakElement(peak), is(6));
 
 
 
