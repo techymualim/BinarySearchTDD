@@ -28,6 +28,7 @@ class BinarySearchTest {
         assertThat(bs.firstPosLastPos(arr,45), is(pos));
         assertThat(bs.bsInfiniteArray(arrO,45), is(45));
         assertThat(bs.peakElement(peak), is(6));
+        assertThat(bs.findMountainElement(peak,1), is(1));
 
 
 
